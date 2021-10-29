@@ -4,7 +4,7 @@ return [
     /*
      | Your kafka brokers url.
      */
-    'brokers' => env('KAFKA_BROKERS', 'localhost:9092'),
+    'brokers' => env('KAFKA_BROKERS', '192.168.1.231:9092'),
 
     /*
      | Kafka consumers belonging to the same consumer group share a group id.
@@ -41,5 +41,5 @@ return [
     /*
      | Choose if debug is enabled or not.
      */
-    'debug' => env('KAFKA_DEBUG', false),
+    'debug' => env('KAFKA_DEBUG', true),
 ];
